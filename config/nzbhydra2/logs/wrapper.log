@@ -1,0 +1,6 @@
+2025-04-24 23:26:43,888  INFO - Determined release type: native
+2025-04-24 23:26:43,888  INFO - Starting NZBHydra main process with command line: ./core -Xmx256M -DfromWrapper=true -DinternalApiKey=qsdvocvauojylmbacngs -Dsun.security.pkcs11.enable-solaris=false -Dfile.encoding=UTF8 -Dspring.output.ansi.enabled=ALWAYS --nobrowser --datafolder /config in folder /app/nzbhydra2
+2025-04-24 23:27:17,588  INFO - Terminated by signal 15
+2025-04-24 23:27:17,588  INFO - NZBHydra2 wrapper shutdown request. Terminating main process gracefully
+2025-04-24 23:27:21,212  INFO - Determined release type: native
+2025-04-24 23:27:21,212  INFO - Starting NZBHydra main process with command line: ./core -Xmx256M -DfromWrapper=true -DinternalApiKey=ejwlwnypyqoabejqgyrg -Dsun.security.pkcs11.enable-solaris=false -Dfile.encoding=UTF8 -Dspring.output.ansi.enabled=ALWAYS --nobrowser --datafolder /config in folder /app/nzbhydra2

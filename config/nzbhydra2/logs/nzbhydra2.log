@@ -1,0 +1,262 @@
+2025-04-24 23:26:45.085  INFO --- [              main] org.nzbhydra.NzbHydra                    : Starting AOT-processed NzbHydra using Java 22.0.1 with PID 177 (/app/nzbhydra2/core started by abc in /app/nzbhydra2)
+2025-04-24 23:26:45.085  INFO --- [              main] org.nzbhydra.NzbHydra                    : The following 1 profile is active: "default"
+2025-04-24 23:26:45.120  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'hydraTaskConfiguration' of type [org.nzbhydra.tasks.HydraTaskConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.126  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'baseConfig' of type [org.nzbhydra.config.BaseConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.127  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'categoriesConfigValidator' of type [org.nzbhydra.config.validation.CategoriesConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.128  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'downloaderConfigValidator' of type [org.nzbhydra.config.validation.DownloaderConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.128  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'downloadingConfigValidator' of type [org.nzbhydra.config.validation.DownloadingConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.129  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'searchingConfigValidator' of type [org.nzbhydra.config.validation.SearchingConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.129  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'loggingConfigValidator' of type [org.nzbhydra.config.validation.LoggingConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.130  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'mainConfigValidator' of type [org.nzbhydra.config.validation.MainConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.130  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'userAuthConfigValidator' of type [org.nzbhydra.config.validation.UserAuthConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.131  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'authConfigValidator' of type [org.nzbhydra.config.validation.AuthConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.146  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'indexerConfigValidator' of type [org.nzbhydra.config.validation.IndexerConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.146  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'notificationConfigValidator' of type [org.nzbhydra.config.validation.NotificationConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.147  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'baseConfigValidator' of type [org.nzbhydra.config.validation.BaseConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.147  INFO --- [              main] org.nzbhydra.config.BaseConfigHandler    : Using data folder /config
+2025-04-24 23:26:45.151  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'baseConfigHandler' of type [org.nzbhydra.config.BaseConfigHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.152  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'configProvider' of type [org.nzbhydra.config.ConfigProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.152  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'hydraGlobalMethodSecurityConfiguration' of type [org.nzbhydra.auth.HydraGlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.153  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.153  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'taskExecutor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:26:45.177  INFO --- [              main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5076 (http)
+2025-04-24 23:26:45.179  INFO --- [              main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 65 ms
+2025-04-24 23:26:45.199  INFO --- [              main] o.n.a.HydraAnonymousAuthenticationFilter : Granting basic user rights to anonymous users
+2025-04-24 23:26:45.199  INFO --- [              main] o.n.a.HydraAnonymousAuthenticationFilter : Granting stats rights to anonymous users
+2025-04-24 23:26:45.199  INFO --- [              main] o.n.a.HydraAnonymousAuthenticationFilter : Granting admin rights to anonymous users
+2025-04-24 23:26:45.216  INFO --- [              main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.10.2 by Redgate
+2025-04-24 23:26:45.216  INFO --- [              main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.10.2
+2025-04-24 23:26:45.216  INFO --- [              main] o.f.c.internal.license.VersionPrinter    : 
+2025-04-24 23:26:45.216  WARN --- [              main] o.f.core.internal.util.FeatureDetector   : Unable to scan location: /migration (unsupported protocol: resource)
+2025-04-24 23:26:45.216  WARN --- [              main] o.f.c.i.s.classpath.ClassPathScanner     : Unable to scan location: /migration (unsupported protocol: resource)
+2025-04-24 23:26:45.216  INFO --- [              main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-24 23:26:45.219  INFO --- [              main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:/config/database/nzbhydra user=<r>
+2025-04-24 23:26:45.219  INFO --- [              main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-24 23:26:45.219  INFO --- [              main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:file:/config/database/nzbhydra (H2 2.1)
+2025-04-24 23:26:45.220  INFO --- [              main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.000s)
+2025-04-24 23:26:45.220  INFO --- [              main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2025-04-24 23:26:45.221  INFO --- [              main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2025-04-24 23:26:45.244  INFO --- [              main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - INITIAL"
+2025-04-24 23:26:45.246  INFO --- [              main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - SEQUENCES"
+2025-04-24 23:26:45.247  INFO --- [              main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.025s)
+2025-04-24 23:26:45.255  WARN --- [              main] org.hibernate.orm.deprecation            : HHH90000029: The [hibernate.bytecode.use_reflection_optimizer] configuration is deprecated and will be removed. Set the value to [true] to get rid of this warning
+2025-04-24 23:26:45.272  INFO --- [              main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-24 23:26:45.281  INFO --- [              main] org.nzbhydra.update.UpdateManager        : Running version 7.12.3
+2025-04-24 23:26:45.283  WARN --- [              main] org.nzbhydra.NzbHydra                    : Overwritten settings will be displayed with their original value in the config section of the GUI
+2025-04-24 23:26:46.559  INFO --- [              main] org.nzbhydra.InstanceCounter             : Instance counted
+2025-04-24 23:26:46.597  INFO --- [              main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-24 23:26:46.742  INFO --- [              main] o.n.d.downloaders.DownloaderProvider     : Loading downloaders
+2025-04-24 23:26:46.742  INFO --- [              main] o.n.d.downloaders.DownloaderProvider     : Finished initializing active downloaders
+2025-04-24 23:26:46.742  INFO --- [              main] o.n.d.downloaders.DownloaderProvider     : No downloaders configured
+2025-04-24 23:26:46.778  INFO --- [              main] o.n.searching.SearchModuleProvider       : Loading indexers
+2025-04-24 23:26:46.778  INFO --- [              main] o.n.searching.SearchModuleProvider       : Finished initializing active indexers
+2025-04-24 23:26:46.778  WARN --- [              main] o.n.searching.SearchModuleProvider       : No indexers configured
+2025-04-24 23:26:46.790  INFO --- [              main] org.nzbhydra.auth.SecurityConfig         : CSRF is disabled
+2025-04-24 23:26:46.861  INFO --- [              main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2025-04-24 23:26:46.869  INFO --- [              main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f3dc86, org.nzbhydra.auth.ForwardedForRecognizingFilter@745f6129, org.springframework.web.filter.ForwardedHeaderFilter@4fbe78b7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44fd9537, org.springframework.security.web.context.SecurityContextHolderFilter@41d305ac, org.springframework.security.web.header.HeaderWriterFilter@7d92728d, org.springframework.security.web.authentication.logout.LogoutFilter@32bb205c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48d67ab2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36eb367c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23319673, org.springframework.security.web.access.ExceptionTranslationFilter@844e078, org.springframework.security.web.access.intercept.AuthorizationFilter@60f7bf5f]
+2025-04-24 23:26:46.929  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Problem detector" to be run every 1 hour
+2025-04-24 23:26:46.929  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Check for and install updates" to be run every 1 hour
+2025-04-24 23:26:46.930  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Delete short term storage results" to be run every 12 hours
+2025-04-24 23:26:46.930  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Delete old history entries" to be run every 1 hour
+2025-04-24 23:26:46.930  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Download queue check" to be run every 10 seconds
+2025-04-24 23:26:46.930  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Backup" to be run every 1 hour
+2025-04-24 23:26:46.930  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Clean up indexer statuses" to be run every 1 minute
+2025-04-24 23:26:46.930  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Download history check" to be run every 10 minutes
+2025-04-24 23:26:46.930  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Delete old search results" to be run every 1 hour
+2025-04-24 23:26:46.932  INFO --- [              main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5076 (http) with context path ''
+2025-04-24 23:26:46.932  INFO --- [              main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2025-04-24 23:26:46.932  INFO --- [              main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3ab6b816]]
+2025-04-24 23:26:46.932  INFO --- [              main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2025-04-24 23:26:46.933  INFO --- [              main] org.nzbhydra.NzbHydra                    : Started NzbHydra in 1.858 seconds (process running for 1.877)
+2025-04-24 23:26:46.936  INFO --- [              main] org.nzbhydra.NzbHydra                    : First start of NZBHydra detected
+2025-04-24 23:26:46.939  INFO --- [              main] org.nzbhydra.NzbHydra                    : You seem to be running NZBHydra 2 in docker. You can access Hydra using your local address and the IP you provided
+2025-04-24 23:26:47.631 ERROR --- [HT-Problem detecto] o.n.p.OpenPortProblemDetector            : Error determining if NZBHydra is exposed to the internet
+2025-04-24 23:27:17.589  INFO --- [SpringApplicationS] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2025-04-24 23:27:17.589  INFO --- [SpringApplicationS] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3ab6b816]]
+2025-04-24 23:27:17.589  INFO --- [SpringApplicationS] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2025-04-24 23:27:17.589  INFO --- [SpringApplicationS] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-24 23:27:17.589  INFO --- [   tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-24 23:27:17.590  INFO --- [SpringApplicationS] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-24 23:27:17.592  INFO --- [SpringApplicationS] org.nzbhydra.NzbHydra                    : Shutting down and using up to 15000ms to compact database
+2025-04-24 23:27:17.592  INFO --- [SpringApplicationS] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-24 23:27:17.593  INFO --- [SpringApplicationS] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-24 23:27:17.593  INFO --- [SpringApplicationS] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-24 23:27:22.422  INFO --- [              main] org.nzbhydra.NzbHydra                    : Starting AOT-processed NzbHydra using Java 22.0.1 with PID 173 (/app/nzbhydra2/core started by abc in /app/nzbhydra2)
+2025-04-24 23:27:22.422  INFO --- [              main] org.nzbhydra.NzbHydra                    : The following 1 profile is active: "default"
+2025-04-24 23:27:22.470  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'hydraTaskConfiguration' of type [org.nzbhydra.tasks.HydraTaskConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.475  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'baseConfig' of type [org.nzbhydra.config.BaseConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.476  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'categoriesConfigValidator' of type [org.nzbhydra.config.validation.CategoriesConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.477  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'downloaderConfigValidator' of type [org.nzbhydra.config.validation.DownloaderConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.477  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'downloadingConfigValidator' of type [org.nzbhydra.config.validation.DownloadingConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.477  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'searchingConfigValidator' of type [org.nzbhydra.config.validation.SearchingConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.478  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'loggingConfigValidator' of type [org.nzbhydra.config.validation.LoggingConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.478  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'mainConfigValidator' of type [org.nzbhydra.config.validation.MainConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.479  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'userAuthConfigValidator' of type [org.nzbhydra.config.validation.UserAuthConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.479  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'authConfigValidator' of type [org.nzbhydra.config.validation.AuthConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.479  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'indexerConfigValidator' of type [org.nzbhydra.config.validation.IndexerConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.480  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'notificationConfigValidator' of type [org.nzbhydra.config.validation.NotificationConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.480  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'baseConfigValidator' of type [org.nzbhydra.config.validation.BaseConfigValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.480  INFO --- [              main] org.nzbhydra.config.BaseConfigHandler    : Using data folder /config
+2025-04-24 23:27:22.487  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'baseConfigHandler' of type [org.nzbhydra.config.BaseConfigHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.488  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'configProvider' of type [org.nzbhydra.config.ConfigProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.488  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'hydraGlobalMethodSecurityConfiguration' of type [org.nzbhydra.auth.HydraGlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.489  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.489  INFO --- [              main] trationDelegate$BeanPostProcessorChecker : Bean 'taskExecutor' of type [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-04-24 23:27:22.514  INFO --- [              main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5076 (http)
+2025-04-24 23:27:22.517  INFO --- [              main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 65 ms
+2025-04-24 23:27:22.540  INFO --- [              main] o.n.a.HydraAnonymousAuthenticationFilter : Granting basic user rights to anonymous users
+2025-04-24 23:27:22.540  INFO --- [              main] o.n.a.HydraAnonymousAuthenticationFilter : Granting stats rights to anonymous users
+2025-04-24 23:27:22.541  INFO --- [              main] o.n.a.HydraAnonymousAuthenticationFilter : Granting admin rights to anonymous users
+2025-04-24 23:27:22.545  INFO --- [              main] o.nzbhydra.database.DatabaseRecreation   : Determined existing database to be version 2. No migration needed.
+2025-04-24 23:27:22.580  INFO --- [              main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.10.2 by Redgate
+2025-04-24 23:27:22.580  INFO --- [              main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.10.2
+2025-04-24 23:27:22.580  INFO --- [              main] o.f.c.internal.license.VersionPrinter    : 
+2025-04-24 23:27:22.580  WARN --- [              main] o.f.core.internal.util.FeatureDetector   : Unable to scan location: /migration (unsupported protocol: resource)
+2025-04-24 23:27:22.580  WARN --- [              main] o.f.c.i.s.classpath.ClassPathScanner     : Unable to scan location: /migration (unsupported protocol: resource)
+2025-04-24 23:27:22.580  INFO --- [              main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-24 23:27:22.583  INFO --- [              main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:/config/database/nzbhydra user=<r>
+2025-04-24 23:27:22.584  INFO --- [              main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-24 23:27:22.584  INFO --- [              main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:file:/config/database/nzbhydra (H2 2.1)
+2025-04-24 23:27:22.585  INFO --- [              main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.000s)
+2025-04-24 23:27:22.585  INFO --- [              main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2025-04-24 23:27:22.585  INFO --- [              main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2025-04-24 23:27:22.594  WARN --- [              main] org.hibernate.orm.deprecation            : HHH90000029: The [hibernate.bytecode.use_reflection_optimizer] configuration is deprecated and will be removed. Set the value to [true] to get rid of this warning
+2025-04-24 23:27:22.614  INFO --- [              main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-24 23:27:22.623  INFO --- [              main] org.nzbhydra.update.UpdateManager        : Running version 7.12.3
+2025-04-24 23:27:22.626  WARN --- [              main] org.nzbhydra.NzbHydra                    : Overwritten settings will be displayed with their original value in the config section of the GUI
+2025-04-24 23:27:22.665  INFO --- [              main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-24 23:27:22.816  INFO --- [              main] o.n.d.downloaders.DownloaderProvider     : Loading downloaders
+2025-04-24 23:27:22.817  INFO --- [              main] o.n.d.downloaders.DownloaderProvider     : Initializing downloader NZBGet
+2025-04-24 23:27:22.817  INFO --- [              main] o.n.d.downloaders.DownloaderProvider     : Finished initializing active downloaders
+2025-04-24 23:27:22.854  INFO --- [              main] o.n.searching.SearchModuleProvider       : Loading indexers
+2025-04-24 23:27:22.855  INFO --- [              main] o.n.searching.SearchModuleProvider       : Initializing indexer Drunken Slug
+2025-04-24 23:27:22.856  INFO --- [              main] o.n.searching.SearchModuleProvider       : Indexer with name Drunken Slug not yet in database. Adding it
+2025-04-24 23:27:22.857  INFO --- [              main] o.n.searching.SearchModuleProvider       : Now 1 indexers in database
+2025-04-24 23:27:22.859  INFO --- [              main] o.n.searching.SearchModuleProvider       : Initializing indexer NZBGeek
+2025-04-24 23:27:22.859  INFO --- [              main] o.n.searching.SearchModuleProvider       : Indexer with name NZBGeek not yet in database. Adding it
+2025-04-24 23:27:22.859  INFO --- [              main] o.n.searching.SearchModuleProvider       : Now 2 indexers in database
+2025-04-24 23:27:22.859  INFO --- [              main] o.n.searching.SearchModuleProvider       : Finished initializing active indexers
+2025-04-24 23:27:22.872  INFO --- [              main] org.nzbhydra.auth.SecurityConfig         : CSRF is disabled
+2025-04-24 23:27:22.946  INFO --- [              main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2025-04-24 23:27:22.955  INFO --- [              main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4828b316, org.nzbhydra.auth.ForwardedForRecognizingFilter@58eae328, org.springframework.web.filter.ForwardedHeaderFilter@7797c46f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6898fcaf, org.springframework.security.web.context.SecurityContextHolderFilter@5785fe73, org.springframework.security.web.header.HeaderWriterFilter@424da91b, org.springframework.security.web.authentication.logout.LogoutFilter@5941e07a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c911dd2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5671268d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e01e869, org.springframework.security.web.access.ExceptionTranslationFilter@3b02b8f1, org.springframework.security.web.access.intercept.AuthorizationFilter@36706393]
+2025-04-24 23:27:23.003  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Problem detector" to be run every 1 hour
+2025-04-24 23:27:23.003  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Check for and install updates" to be run every 1 hour
+2025-04-24 23:27:23.003  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Delete short term storage results" to be run every 12 hours
+2025-04-24 23:27:23.003  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Delete old history entries" to be run every 1 hour
+2025-04-24 23:27:23.003  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Download queue check" to be run every 10 seconds
+2025-04-24 23:27:23.003  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Backup" to be run every 1 hour
+2025-04-24 23:27:23.003  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Clean up indexer statuses" to be run every 1 minute
+2025-04-24 23:27:23.003  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Download history check" to be run every 10 minutes
+2025-04-24 23:27:23.003  INFO --- [              main] org.nzbhydra.tasks.HydraTaskScheduler    : Scheduling task "Delete old search results" to be run every 1 hour
+2025-04-24 23:27:23.005  INFO --- [              main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5076 (http) with context path ''
+2025-04-24 23:27:23.005  INFO --- [              main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2025-04-24 23:27:23.005  INFO --- [              main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7a92830c]]
+2025-04-24 23:27:23.005  INFO --- [              main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2025-04-24 23:27:23.006  INFO --- [              main] org.nzbhydra.NzbHydra                    : Started NzbHydra in 0.594 seconds (process running for 0.621)
+2025-04-24 23:27:23.020  INFO --- [              main] org.nzbhydra.NzbHydra                    : You seem to be running NZBHydra 2 in docker. You can access Hydra using your local address and the IP you provided
+2025-04-24 23:27:24.246 ERROR --- [HT-Problem detecto] o.n.p.OpenPortProblemDetector            : Error determining if NZBHydra is exposed to the internet
+2025-04-24 23:27:55.891  INFO --- [http-nio-0.0.0.0-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-24 23:27:55.891  INFO --- [http-nio-0.0.0.0-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-24 23:27:55.892  INFO --- [http-nio-0.0.0.0-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-24 23:46:17.017 ERROR --- [   pool-5-thread-1] o.n.d.downloaders.nzbget.NzbGet          : Error contacting NZBGet
+
+java.net.ConnectException: Connection refused
+	at java.base@22.0.1/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base@22.0.1/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base@22.0.1/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base@22.0.1/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base@22.0.1/java.net.Socket.connect(Socket.java:752)
+	at java.base@22.0.1/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base@22.0.1/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base@22.0.1/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base@22.0.1/sun.net.www.http.HttpClient.<init>(HttpClient.java:280)
+	at java.base@22.0.1/sun.net.www.http.HttpClient.New(HttpClient.java:386)
+	at java.base@22.0.1/sun.net.www.http.HttpClient.New(HttpClient.java:408)
+	at java.base@22.0.1/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1310)
+	at java.base@22.0.1/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1288)
+	at java.base@22.0.1/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129)
+	at java.base@22.0.1/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1058)
+	at com.googlecode.jsonrpc4j.JsonRpcHttpClient.invoke(JsonRpcHttpClient.java:133)
+	at com.googlecode.jsonrpc4j.JsonRpcHttpClient.invoke(JsonRpcHttpClient.java:113)
+	at com.googlecode.jsonrpc4j.JsonRpcHttpClient.invoke(JsonRpcHttpClient.java:175)
+	at org.nzbhydra.downloading.downloaders.nzbget.NzbGet.getStatus(NzbGet.java:186)
+	at org.nzbhydra.downloading.downloaders.DownloaderStatusRetrieval.getStatus(DownloaderStatusRetrieval.java:58)
+	at org.nzbhydra.downloading.downloaders.DownloaderWebSocket.lambda$scheduleDownloadStatusSending$0(DownloaderWebSocket.java:74)
+	at java.base@22.0.1/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base@22.0.1/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base@22.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base@22.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base@22.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@22.0.1/java.lang.Thread.runWith(Thread.java:1583)
+	at java.base@22.0.1/java.lang.Thread.run(Thread.java:1570)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:853)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:829)
+
+2025-04-24 23:46:34.517  INFO --- [http-nio-0.0.0.0-5] org.nzbhydra.searching.SearchWeb         : [ID: 42483, Host: steven-u] New search request: SearchRequest{source=INTERNAL, indexers=[NZBGeek, Drunken Slug], searchType=SEARCH, category=XXX, offset=0, limit=100, minsize=100, maxsize=10000, query=1080, identifiers={}}
+2025-04-24 23:46:34.519  INFO --- [http-nio-0.0.0.0-5] o.n.searching.IndexerForSearchSelector   : [ID: 42483, Host: steven-u] Selected 2 out of 2 indexers: NZBGeek, Drunken Slug
+2025-04-24 23:46:34.520  INFO --- [  pool-32-thread-2] org.nzbhydra.indexers.Newznab            : [ID: 42483, Host: steven-u] Drunken Slug: Calling https://api.drunkenslug.com/api?apikey=<apikey>&t=search&extended=1&q=1080&minsize=100&password=1&cat=6000&limit=1000&offset=0
+2025-04-24 23:46:34.520  INFO --- [  pool-32-thread-1] org.nzbhydra.indexers.Newznab            : [ID: 42483, Host: steven-u] NZBGeek: Calling https://api.nzbgeek.info/api?apikey=<apikey>&t=search&extended=1&q=1080&minsize=100&password=1&cat=6000&limit=1000&offset=0
+2025-04-24 23:46:35.993  INFO --- [  pool-32-thread-1] o.n.searching.SearchResultAcceptor       : [ID: 42483, Host: steven-u] Rejected 2 search results from NZBGeek for the following reason: Wrong size
+2025-04-24 23:46:36.055  INFO --- [  pool-32-thread-1] org.nzbhydra.indexers.Newznab            : [ID: 42483, Host: steven-u] NZBGeek: Successfully executed search call in 1452ms with 403736 total results
+2025-04-24 23:46:36.273  INFO --- [  pool-32-thread-2] o.n.searching.SearchResultAcceptor       : [ID: 42483, Host: steven-u] Rejected 1 search results from Drunken Slug for the following reason: Wrong size
+2025-04-24 23:46:36.276  INFO --- [  pool-32-thread-2] org.nzbhydra.indexers.Newznab            : [ID: 42483, Host: steven-u] Drunken Slug: Successfully executed search call in 1746ms with 2699 total results
+2025-04-24 23:46:36.287  INFO --- [http-nio-0.0.0.0-5] org.nzbhydra.searching.Searcher          : [ID: 42483, Host: steven-u] Returning results 1-566 from 566 results in cache. A total of 406435 results is available from indexers of which 3 were already rejected
+2025-04-24 23:46:36.302  INFO --- [http-nio-0.0.0.0-5] org.nzbhydra.searching.SearchWeb         : [ID: 42483, Host: steven-u] Web search took 1785ms
+2025-04-24 23:46:45.489 ERROR --- [ delayedConfigSave] org.nzbhydra.config.ConfigReaderWriter   : Unable to save config
+
+java.io.FileNotFoundException: /config/nzbhydra.yml.tmp (Permission denied)
+	at java.base@22.0.1/java.io.FileOutputStream.open0(Native Method)
+	at java.base@22.0.1/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base@22.0.1/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base@22.0.1/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at org.nzbhydra.config.ConfigReaderWriter.doWrite(ConfigReaderWriter.java:120)
+	at org.nzbhydra.config.ConfigReaderWriter.lambda$save$0(ConfigReaderWriter.java:100)
+	at dev.failsafe.Functions.lambda$toCtxSupplier$9(Functions.java:228)
+	at dev.failsafe.Functions.lambda$get$0(Functions.java:46)
+	at dev.failsafe.internal.RetryPolicyExecutor.lambda$apply$0(RetryPolicyExecutor.java:74)
+	at dev.failsafe.SyncExecutionImpl.executeSync(SyncExecutionImpl.java:187)
+	at dev.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:376)
+	at dev.failsafe.FailsafeExecutor.run(FailsafeExecutor.java:220)
+	at org.nzbhydra.config.ConfigReaderWriter.save(ConfigReaderWriter.java:100)
+	at org.nzbhydra.config.ConfigReaderWriter.save(ConfigReaderWriter.java:60)
+	at org.nzbhydra.config.BaseConfigHandler.saveToSave(BaseConfigHandler.java:141)
+	at org.nzbhydra.config.BaseConfigHandler$1.run(BaseConfigHandler.java:82)
+	at java.base@22.0.1/java.util.TimerThread.mainLoop(Timer.java:571)
+	at java.base@22.0.1/java.util.TimerThread.run(Timer.java:521)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:853)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:829)
+
+2025-04-24 23:56:18.017 ERROR --- [   pool-5-thread-1] o.n.d.downloaders.nzbget.NzbGet          : Error contacting NZBGet
+
+java.net.ConnectException: Connection refused
+	at java.base@22.0.1/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base@22.0.1/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base@22.0.1/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base@22.0.1/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base@22.0.1/java.net.Socket.connect(Socket.java:752)
+	at java.base@22.0.1/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base@22.0.1/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base@22.0.1/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base@22.0.1/sun.net.www.http.HttpClient.<init>(HttpClient.java:280)
+	at java.base@22.0.1/sun.net.www.http.HttpClient.New(HttpClient.java:386)
+	at java.base@22.0.1/sun.net.www.http.HttpClient.New(HttpClient.java:408)
+	at java.base@22.0.1/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1310)
+	at java.base@22.0.1/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1288)
+	at java.base@22.0.1/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129)
+	at java.base@22.0.1/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1058)
+	at com.googlecode.jsonrpc4j.JsonRpcHttpClient.invoke(JsonRpcHttpClient.java:133)
+	at com.googlecode.jsonrpc4j.JsonRpcHttpClient.invoke(JsonRpcHttpClient.java:113)
+	at com.googlecode.jsonrpc4j.JsonRpcHttpClient.invoke(JsonRpcHttpClient.java:175)
+	at org.nzbhydra.downloading.downloaders.nzbget.NzbGet.getStatus(NzbGet.java:186)
+	at org.nzbhydra.downloading.downloaders.DownloaderStatusRetrieval.getStatus(DownloaderStatusRetrieval.java:58)
+	at org.nzbhydra.downloading.downloaders.DownloaderWebSocket.lambda$scheduleDownloadStatusSending$0(DownloaderWebSocket.java:74)
+	at java.base@22.0.1/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base@22.0.1/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base@22.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base@22.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base@22.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@22.0.1/java.lang.Thread.runWith(Thread.java:1583)
+	at java.base@22.0.1/java.lang.Thread.run(Thread.java:1570)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:853)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:829)
+

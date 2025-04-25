@@ -1,0 +1,8 @@
+Thu Apr 24 23:26:58 2025	INFO	nzbget 24.8 server-mode
+Thu Apr 24 23:26:58 2025	INFO	using /config/nzbget.conf
+Thu Apr 24 23:26:58 2025	INFO	nzbget runs on 0.0.0.0:6789
+Fri Apr 25 00:03:02 2025	INFO	Reloading...
+Fri Apr 25 00:03:02 2025	INFO	nzbget 24.8 server-mode
+Fri Apr 25 00:03:02 2025	INFO	using /config/nzbget.conf
+Fri Apr 25 00:03:02 2025	INFO	nzbget runs on 0.0.0.0:6789
+Fri Apr 25 00:03:02 2025	WARNING	Request received on port 6789 from 172.21.0.1, but username (nzbget) or password invalid
