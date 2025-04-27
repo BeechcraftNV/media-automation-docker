@@ -1,3 +1,4 @@
+version: "3.8"
 
 services:
   nzbhydra2:
@@ -6,8 +7,8 @@ services:
     ports:
       - ${NZBHYDRA2_PORT}:5076
     volumes:
-      - ./config/nzbhydra2:/config
-      - ${DOWNLOADS}:/data/downloads
+      - ${DATA_ROOT}:/data
+      - ${DATA_ROOT}/config/nzbhydra2:/config
     restart: unless-stopped
 
   nzbget:
@@ -16,8 +17,8 @@ services:
     ports:
       - ${NZBGET_PORT}:6789
     volumes:
-      - ./config/nzbget:/config
-      - ${DOWNLOADS}:/data/downloads
+      - ${DATA_ROOT}:/data
+      - ${DATA_ROOT}/config/nzbget:/config
     restart: unless-stopped
 
   prowlarr:
@@ -26,7 +27,8 @@ services:
     ports:
       - ${PROWLARR_PORT}:9696
     volumes:
-      - ./config/prowlarr:/config
+      - ${DATA_ROOT}:/data
+      - ${DATA_ROOT}/config/prowlarr:/config
     restart: unless-stopped
 
   sonarr:
@@ -37,9 +39,8 @@ services:
     environment:
       - TZ=${TZ}
     volumes:
-      - ./config/sonarr:/config
-      - ${DOWNLOADS}:/data/downloads
-      - ${MEDIA_TV}:/data/media/tv
+      - ${DATA_ROOT}:/data
+      - ${DATA_ROOT}/config/sonarr:/config
     restart: unless-stopped
 
   radarr:
@@ -50,9 +51,22 @@ services:
     environment:
       - TZ=${TZ}
     volumes:
-      - ./config/radarr:/config
-      - ${DOWNLOADS}:/data/downloads
-      - ${MEDIA_MOVIES}:/data/media/movies
+      - ${DATA_ROOT}:/data
+      - ${DATA_ROOT}/config/radarr:/config
+    restart: unless-stopped
+
+  readarr:
+    image: lscr.io/linuxserver/readarr:develop
+    container_name: readarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=${TZ}
+    volumes:
+      - ${DATA_ROOT}:/data
+      - ${DATA_ROOT}/config/readarr:/config
+    ports:
+      - ${READARR_PORT}:8787
     restart: unless-stopped
 
   jellyfin:
@@ -61,10 +75,8 @@ services:
     ports:
       - ${JELLYFIN_PORT}:8096
     volumes:
-      - ./config/jellyfin:/config
-      - ${MEDIA_TV}:/data/media/tv
-      - ${MEDIA_MOVIES}:/data/media/movies
-      - ${DOWNLOADS}:/data/downloads
+      - ${DATA_ROOT}:/data
+      - ${DATA_ROOT}/config/jellyfin:/config
     devices:
       - /dev/dri:/dev/dri  # Optional for hardware acceleration
     restart: unless-stopped
@@ -77,22 +89,6 @@ services:
     environment:
       - TZ=${TZ}
     volumes:
-      - ./config/bazarr:/config
-      - ${MEDIA_TV}:/data/media/tv
-      - ${MEDIA_MOVIES}:/data/media/movies
-    restart: unless-stopped
-
-  readarr:
-    image: lscr.io/linuxserver/readarr:develop
-    container_name: readarr
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=${TZ}
-    volumes:
-      - ${DATA_ROOT}/config/readarr:/config
-      - ${DOWNLOADS}:/downloads
-      - ${MEDIA_BOOKS}:/books
-    ports:
-      - ${READARR_PORT}:8787
+      - ${DATA_ROOT}:/data
+      - ${DATA_ROOT}/config/bazarr:/config
     restart: unless-stopped

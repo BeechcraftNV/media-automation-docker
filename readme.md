@@ -1,48 +1,58 @@
-# NZB Media Server Stack
+# Media-Automation-Docker Stack
 
-This project sets up a complete, automated Usenet media server stack using Docker Compose on Linux.
-
----
-
-## 📦 Stack Overview
-
-| Service     | Role                         | Port   | Notes                             |
-|-------------|------------------------------|--------|-----------------------------------|
-| Jellyfin    | Media server                 | 8096   | Scans `/data/media/` for content  |
-| Sonarr      | TV show automation           | 8989   | Pulls from indexers → NZBGet      |
-| Radarr      | Movie automation             | 7878   | Pulls from indexers → NZBGet      |
-| NZBGet      | Usenet downloader            | 6789   | Handles .nzb files from indexers  |
-| NZBHydra2   | Usenet meta-search engine    | 5076   | Unified indexer search frontend   |
-| Prowlarr    | Indexer management for apps | 9696   | Connects indexers to Sonarr/Radarr |
-| Bazarr      | Subtitle downloader          | 6767   | Optional (syncs with Sonarr/Radarr) |
+> A self-hosted automation suite (NZBHydra2 + NZBGet + *Arr suite + Jellyfin) running under Docker Compose on Ubuntu 25.04.
 
 ---
 
-## 📁 Folder Structure
+## ✨ What’s inside?
 
-NzbHydra2/ ├── docker-compose.yml ├── .env ├── config/ # Persistent config for each service │ ├── sonarr/ │ ├── radarr/ │ ├── prowlarr/ │ ├── nzbget/ │ ├── jellyfin/ │ └── ... ├── data/ │ ├── downloads/ # Handled by NZBGet │ │ ├── tv/ │ │ └── movies/ │ └── media/ # Final organized media │ ├── tv/ │ └── movies/
-
+| Service     | Image                                   | Purpose                                   | Port (host) |
+|-------------|-----------------------------------------|-------------------------------------------|-------------|
+| NZBHydra2   | `ghcr.io/linuxserver/nzbhydra2`         | Meta-search index for Usenet              | `${NZBHYDRA2_PORT}` |
+| NZBGet      | `ghcr.io/linuxserver/nzbget`            | Usenet downloader                         | `${NZBGET_PORT}` |
+| Prowlarr    | `ghcr.io/linuxserver/prowlarr`          | Indexer manager for *Arr apps             | `${PROWLARR_PORT}` |
+| Sonarr      | `ghcr.io/linuxserver/sonarr`            | TV series automation                      | `${SONARR_PORT}` |
+| Radarr      | `ghcr.io/linuxserver/radarr`            | Movie automation                          | `${RADARR_PORT}` |
+| Readarr     | `lscr.io/linuxserver/readarr:develop`   | E-book / Audiobook automation             | `${READARR_PORT}` |
+| Bazarr      | `ghcr.io/linuxserver/bazarr`            | Subtitle searcher                         | `${BAZARR_PORT}` |
+| Jellyfin    | `jellyfin/jellyfin`                     | Media server / player                     | `${JELLYFIN_PORT}` |
 
 ---
 
-## 🔧 Setup & Usage
+## 🗂️ Folder layout
 
-### 🚀 Start the stack
+media-automation-docker/ ├── docker-compose.yml ├── .env ├── data/ │ ├── config/ # All app configs live here │ │ ├── radarr/ │ │ ├── sonarr/ │ │ └── …
+│ ├── downloads/ # NZBGet intermediate & completed files │ └── media/ # Final libraries scanned by Jellyfin/*Arr │ ├── tv/ │ ├── movies/ │ └── books/ └── README.md
+
+
+> **Back up** `./data/` and you have everything—configs, libraries, and activity logs.
+
+---
+
+## 🚀 Quick start
 
 ```bash
+# 1. Clone / copy this repo
+git clone <your-repo-url>
+cd media-automation-docker
 
-start the stack
+# 2. Adjust .env (ports, paths, timezone)
+nano .env
+
+# 3. Fire it up
 docker compose up -d
 
-stop the stack
-docker compose down
+# 4. Browse to services (e.g. http://localhost:8989 for Sonarr)
 
-Rebuild (e.g. after image updates)
-docker compose pull
-docker compose up -d
+TZ=America/Los_Angeles
+DATA_ROOT=./data             # base persistent volume
 
-Permissions
-sudo chown -R 1000:1000 config data
-
-Note for future steve
-tar -czvf nzbstack_backup_$(date +%F).tar.gz docker-compose.yml .env config data
+# Service ports
+NZBHYDRA2_PORT=5076
+NZBGET_PORT=6789
+PROWLARR_PORT=9696
+SONARR_PORT=8989
+RADARR_PORT=7878
+READARR_PORT=8787
+JELLYFIN_PORT=8096
+BAZARR_PORT=6767
