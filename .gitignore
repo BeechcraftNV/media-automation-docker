@@ -1,0 +1,11 @@
+# Ignore runtime state and media
+/config/
+/data/
+
+# Ignore editor or shell env files
+.env.local
+.env.*.local
+
+# Optional editor / OS cruft
+*.swp
+.DS_Store

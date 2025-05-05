@@ -1,10 +1,16 @@
+version: '3.8'
 
 services:
   nzbhydra2:
     image: ghcr.io/linuxserver/nzbhydra2
+    user: "${PUID}:${PGID}"
     container_name: nzbhydra2
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
     ports:
-      - ${NZBHYDRA2_PORT}:5076
+      - "${NZBHYDRA2_PORT}:5076"
     volumes:
       - ./config/nzbhydra2:/config
       - ${DOWNLOADS}:/data/downloads
@@ -12,9 +18,14 @@ services:
 
   nzbget:
     image: ghcr.io/linuxserver/nzbget
+    user: "${PUID}:${PGID}"
     container_name: nzbget
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
     ports:
-      - ${NZBGET_PORT}:6789
+      - "${NZBGET_PORT}:6789"
     volumes:
       - ./config/nzbget:/config
       - ${DOWNLOADS}:/data/downloads
@@ -22,20 +33,28 @@ services:
 
   prowlarr:
     image: ghcr.io/linuxserver/prowlarr
+    user: "${PUID}:${PGID}"
     container_name: prowlarr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
     ports:
-      - ${PROWLARR_PORT}:9696
+      - "${PROWLARR_PORT}:9696"
     volumes:
       - ./config/prowlarr:/config
     restart: unless-stopped
 
   sonarr:
     image: ghcr.io/linuxserver/sonarr
+    user: "${PUID}:${PGID}"
     container_name: sonarr
-    ports:
-      - ${SONARR_PORT}:8989
     environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
       - TZ=${TZ}
+    ports:
+      - "${SONARR_PORT}:8989"
     volumes:
       - ./config/sonarr:/config
       - ${DOWNLOADS}:/data/downloads
@@ -44,11 +63,14 @@ services:
 
   radarr:
     image: ghcr.io/linuxserver/radarr
+    user: "${PUID}:${PGID}"
     container_name: radarr
-    ports:
-      - ${RADARR_PORT}:7878
     environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
       - TZ=${TZ}
+    ports:
+      - "${RADARR_PORT}:7878"
     volumes:
       - ./config/radarr:/config
       - ${DOWNLOADS}:/data/downloads
@@ -59,7 +81,7 @@ services:
     image: jellyfin/jellyfin
     container_name: jellyfin
     ports:
-      - ${JELLYFIN_PORT}:8096
+      - "${JELLYFIN_PORT}:8096"
     volumes:
       - ./config/jellyfin:/config
       - ${MEDIA_TV}:/data/media/tv
@@ -71,11 +93,14 @@ services:
 
   bazarr:
     image: ghcr.io/linuxserver/bazarr
+    user: "${PUID}:${PGID}"
     container_name: bazarr
-    ports:
-      - ${BAZARR_PORT}:6767
     environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
       - TZ=${TZ}
+    ports:
+      - "${BAZARR_PORT}:6767"
     volumes:
       - ./config/bazarr:/config
       - ${MEDIA_TV}:/data/media/tv
@@ -84,15 +109,16 @@ services:
 
   readarr:
     image: lscr.io/linuxserver/readarr:develop
+    user: "${PUID}:${PGID}"
     container_name: readarr
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=${PUID}
+      - PGID=${PGID}
       - TZ=${TZ}
+    ports:
+      - "${READARR_PORT}:8787"
     volumes:
-      - ${DATA_ROOT}/config/readarr:/config
+      - ./config/readarr:/config
       - ${DOWNLOADS}:/downloads
       - ${MEDIA_BOOKS}:/books
-    ports:
-      - ${READARR_PORT}:8787
     restart: unless-stopped
